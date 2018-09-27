@@ -1,0 +1,88 @@
+html {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("https://images.pexels.com/photos/269063/pexels-photo-269063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    justify-content: center;
+}
+
+body {
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 120, 235);
+    border: 10px outset rgb(74, 128, 228);
+    border-radius: 10px;
+    margin: auto;
+    justify-content: center;
+}
+
+.header {
+    height: 95px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 46px;
+    color: rgb(238,232,170);
+    line-height: 90px;
+}
+
+.grid {
+    outline: 5px inset rgb(74, 128, 228);
+    height: 630px;
+    width: 630px;
+    background-color: #fff;
+    margin: auto;
+    line-height: 0;
+}
+
+.cell {
+    display: inline-block;    
+    border-collapse: collapse;
+}
+
+.grid:hover {
+    cursor: crosshair;
+}
+
+.buttons {
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border: 5px solid #e6e6e6;
+    border-radius: 50%;
+    font-family: 'Yellowtail', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+#b-clear {
+    margin: 14px 320px 0 0;
+    font-size: 28px;
+}
+
+#b-resize {
+    margin: 14px 0 0 320px;
+}
+
+#b-clear:hover, #b-resize:hover {
+    background-color: #b6b6b6;
+    border-color: #fff
+}
